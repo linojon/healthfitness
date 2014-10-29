@@ -1,0 +1,35 @@
+[01:06][jonathan@Jonathans-iMac-2:~/Projects/meteor/healthfitness]$ tree
+.
+├── client
+│   ├── helpers
+│   │   ├── config.coffee
+│   │   └── errors.coffee
+│   ├── main.coffee
+│   ├── main.jade
+│   ├── stylesheets
+│   │   └── style.less
+│   └── templates
+│       ├── application
+│       │   └── layout.jade
+│       ├── home
+│       │   └── home.jade
+│       └── includes
+│           ├── access_denied.jade
+│           ├── errors.coffee
+│           ├── errors.jade
+│           ├── footer.jade
+│           ├── header.jade
+│           ├── loading.jade
+│           └── not_found.jade
+├── devel_notes.txt
+├── lib
+│   ├── collections
+│   ├── permissions.coffee
+│   ├── router.coffee
+│   └── scroll_to_top.coffee
+├── public
+└── server
+    ├── fixtures.coffee
+    └── publications.coffee
+
+

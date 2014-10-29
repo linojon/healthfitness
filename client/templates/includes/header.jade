@@ -1,0 +1,26 @@
+template(name="header")
+  header
+    meta(name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+  nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed( type="button" data-toggle="collapse" data-target="#navigation")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href="") Virtual Health &amp; Fitness
+
+      #navigation.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          if currentUser
+            li
+              a(href="") Something
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="{{pathFor 'home'}}" data-toggle="collapse" data-target="#navbar1") 
+              i.glyphicon.glyphicon-home
+          li
+            a.btn.btn-success(href="" data-toggle="collapse" data-target="#navbar1" ) Stuff
+          +loginButtons
+  div(style="height: 60px")
