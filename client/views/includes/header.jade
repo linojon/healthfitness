@@ -21,6 +21,10 @@ template(name="header")
             a(href="{{pathFor 'home'}}" data-toggle="collapse" data-target="#navbar1") 
               i.glyphicon.glyphicon-home
           li
-            a.btn.btn-success(href="" data-toggle="collapse" data-target="#navbar1" ) Stuff
+            a(href="{{pathFor 'about'}}" data-toggle="collapse" data-target="#navbar1") 
+              | About
+          li
+            a.btn.btn-success(href="" data-toggle="collapse" data-target="#navbar1" ) 
+              | Stuff
           +loginButtons
   div(style="height: 60px")

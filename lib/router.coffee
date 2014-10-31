@@ -1,12 +1,19 @@
 Router.configure(
-  layoutTemplate: 'layout'
+  layoutTemplate: 'application'
   loadingTemplate: 'loading'
   notFoundTemplate: 'notFound',
   # waitOn: -> []
 )
 
 Router.map -> 
-  this.route 'home', {path: '/'}
+  this.route 'home', {
+    path: '/',
+    layoutTemplate: 'hero_layout'
+  }
+
+  this.route 'about', {
+    path: '/about'
+  }
 
 requireLogin = (pause) ->
   if !Meteor.user()
